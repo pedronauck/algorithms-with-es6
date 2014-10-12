@@ -24,5 +24,5 @@ Algorithm | Description
 
 Algorithm | Description
 --------- | -----------
-[givenSum()](/src/math/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
-[reorderByIndexes()](/src/array/reorder-by-indexes.js) | Reorder an array based on other array with indexes
+[givenSum()](/src/interview-questions/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
+[reorderByIndexes()](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
