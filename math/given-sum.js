@@ -1,8 +1,7 @@
 let arrIsEqual = require('../utils/array-is-equal');
 
 let givenSum = (arr, sum) => {
-  let index = -1;
-  let nums = [];
+  let [index, nums] = [-1, []];
 
   while(++index < arr.length) {
     let x = arr[index];

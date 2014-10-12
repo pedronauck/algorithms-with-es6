@@ -1,5 +1,5 @@
 let reorderByIndexes = (arr, indexes) => {
-  return indexes.map((n, i) => arr[n]);
+  return [for (n of indexes) arr[n]];
 };
 
 module.exports = reorderByIndexes;
