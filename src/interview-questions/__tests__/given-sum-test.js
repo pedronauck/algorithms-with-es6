@@ -1,6 +1,6 @@
 jest
   .dontMock('../given-sum')
-  .dontMock('../../utils/array-is-equal');
+  .dontMock('../../../utils/array-is-equal');
 
 describe('givenSum()', () => {
   it('should return two numbers that the sum is equal other number as second argument', () => {

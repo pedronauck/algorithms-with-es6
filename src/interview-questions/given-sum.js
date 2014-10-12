@@ -1,4 +1,4 @@
-let arrIsEqual = require('../utils/array-is-equal');
+let arrIsEqual = require('../../utils/array-is-equal');
 
 let givenSum = (arr, sum) => {
   let [index, nums] = [-1, []];
