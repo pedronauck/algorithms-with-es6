@@ -9,7 +9,6 @@ The list of Algorithms made by now:
 Algorithm | Description
 --------- | -----------
 [fatorial()](/math/fatorial.js) | Fatorial algorithm
-[givenSum()](/math/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
 [permutation()](/math/permutation.js) | Permutation math algorithm
 [simpleCombination()](/math/simple-combination.js) | Simple combination algorithm
 
@@ -19,5 +18,11 @@ Algorithm | Description
 --------- | -----------
 [flatten()](/array/flatten.js) | Flatten an array
 [removeFromArr()](/array/remove-from-array.js) | Remove an item from an array
-[reorderByIndexes()](/array/reorder-by-indexes.js) | Reorder an array based on other array with indexes
 [reverse()](/array/reverse.js) | Reverse an array
+
+## Interview Questions
+
+Algorithm | Description
+--------- | -----------
+[givenSum()](/math/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
+[reorderByIndexes()](/array/reorder-by-indexes.js) | Reorder an array based on other array with indexes
