@@ -9,6 +9,7 @@ The list of Algorithms made by now:
 Algorithm | Description
 --------- | -----------
 [fatorial](/src/math/fatorial.js) | Fatorial algorithm
+[fibonacci](/src/math/fibonacci.js) | Fibonacci algorithm
 [permutation](/src/math/permutation.js) | Permutation math algorithm
 [simpleCombination](/src/math/simple-combination.js) | Simple combination algorithm
 
