@@ -4,7 +4,7 @@
   "description": "Just a bunch of algorithms using Javascript with ES6",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
