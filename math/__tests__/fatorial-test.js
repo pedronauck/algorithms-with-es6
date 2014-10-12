@@ -1,6 +1,6 @@
 jest.dontMock('../fatorial');
 
-describe('fatorial', () => {
+describe('fatorial()', () => {
   it('should return a fatorial of a number', () => {
     let fatorial = require('../fatorial');
 

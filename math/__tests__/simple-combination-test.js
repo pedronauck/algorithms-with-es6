@@ -2,7 +2,7 @@ jest
   .dontMock('../simple-combination')
   .dontMock('../fatorial');
 
-describe('simple combination', () => {
+describe('simpleCombination()', () => {
   it('should calculate a simple math combination expression', () => {
     var simpleCombination = require('../simple-combination');
 
