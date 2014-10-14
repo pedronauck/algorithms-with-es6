@@ -2,8 +2,7 @@ let isPrime = function(num) {
   if (num % 2 === 0) return false;
   if (num === 2 || num === 3) return true;
 
-  let divisor = 3;
-  let limit = Math.sqrt(num);
+  let [divisor, limit] = [3, Math.sqrt(num)];
 
   while (divisor <= limit) {
     if (num % divisor === 0) return false;
