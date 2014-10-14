@@ -10,8 +10,9 @@ Algorithm | Description
 --------- | -----------
 [fatorial](/src/math/fatorial.js) | Fatorial algorithm
 [fibonacci](/src/math/fibonacci.js) | Fibonacci algorithm
+[greatestCommonDivisor](/src/math/greatest-common-divisor.js) | Get the greatest common divisor of two numbers
 [isPrime](/src/math/is-prime.js) | Verify if is a prime number
-[permutation](/src/math/permutation.js) | Permutation math algorithm
+[permutation](/src/math/permutation.js) | Permutation algorithm
 [simpleCombination](/src/math/simple-combination.js) | Simple combination algorithm
 
 ## Array functions
@@ -27,4 +28,5 @@ Algorithm | Description
 Algorithm | Description
 --------- | -----------
 [givenSum](/src/interview-questions/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
+[isPalindrome](/src/interview-questions/is-palindrome.js) | Return if word is a [palindrome](http://en.wikipedia.org/wiki/Palindrome)
 [reorderByIndexes](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
