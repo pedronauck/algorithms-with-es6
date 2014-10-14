@@ -10,6 +10,7 @@ Algorithm | Description
 --------- | -----------
 [fatorial](/src/math/fatorial.js) | Fatorial algorithm
 [fibonacci](/src/math/fibonacci.js) | Fibonacci algorithm
+[isPrime](/src/math/is-prime.js) | Verify if is a prime number
 [permutation](/src/math/permutation.js) | Permutation math algorithm
 [simpleCombination](/src/math/simple-combination.js) | Simple combination algorithm
 
