@@ -1,24 +1,25 @@
 var _flatten = function(arr) {
   var _newArr = [];
-  var _checkArray = function(_checkArray) {
-    return function(_newArr) {
-      return function(item) {
-        if (Array.isArray(item)) {
-          item.forEach(_checkArray);
+
+  recursiveArr = function(_newArr) {
+    return function(arr) {
+      // Go through all items in the array
+      for ( var _i = 0; _i < arr.length; _i++  ) {
+        // Check if item is an Array
+        // if so call same function until no more Arrays found
+        // and push to new array
+        if ( Array.isArray(arr[_i]) ) {
+          recursiveArr(arr[_i]);
         }
         else {
-          if (_newArr.indexOf(item) === -1) {
-            _newArr.push(item);
-          }
+          _newArr.push(arr[_i]);
         }
-      };
+      }
     };
-  }(_checkArray)(_newArr);
+  }(_newArr)
 
-  arr.forEach(_checkArray);
-  return _newArr.sort(function(a, b) {
-    return a - b;
-  });
+  recursiveArr(arr);
+  return _newArr;
 };
 
 module.exports = _flatten;
