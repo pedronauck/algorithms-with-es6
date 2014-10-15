@@ -30,3 +30,19 @@ Algorithm | Description
 [givenSum](/src/interview-questions/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
 [isPalindrome](/src/interview-questions/is-palindrome.js) | Return if word is a [palindrome](http://en.wikipedia.org/wiki/Palindrome)
 [reorderByIndexes](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
+
+## How to run
+
+Make sure to install all modules
+
+`npm install`
+
+After make any changes and add your test to __tests__ folder run the test command
+
+`npm test`
+
+To build from ES6 to ES5
+
+`gulp build`
+
+Enjoy!
