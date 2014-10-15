@@ -1,10 +1,9 @@
 let flatten = (arr) => {
   let newArr = [];
-  let checkArray = (item) => {
+  var checkArray = (item) => {
     if (Array.isArray(item)) {
       item.forEach(checkArray);
-    }
-    else {
+    } else {
       if (newArr.indexOf(item) === -1) {
         newArr.push(item);
       }
