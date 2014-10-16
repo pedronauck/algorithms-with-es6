@@ -1,13 +1,10 @@
 var _reverse = function(arr) {
-  var _ref = [new Array(), arr.length];
-  var _newArr = _ref[0];
-  var _index = _ref[1];
-
-  while (--_index >= 0) {
-    _newArr.push(arr[_index]);
-  }
-
-  return _newArr;
+  var _index = arr.length;
+  return arr.map(function(_index) {
+    return function() {
+      return arr[--_index];
+    };
+  }(_index));
 };
 
 module.exports = _reverse;
