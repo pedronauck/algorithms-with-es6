@@ -31,18 +31,21 @@ Algorithm | Description
 [isPalindrome](/src/interview-questions/is-palindrome.js) | Return if word is a [palindrome](http://en.wikipedia.org/wiki/Palindrome)
 [reorderByIndexes](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
 
+You can see the compiled codes [at here](/dist).
+
 ## How to run
 
-Make sure to install all modules
+1. Make sure to install all modules
+```bash
+$ npm install
+```
+1. After make any changes and add your test to `__tests__` folder run the test command
+```bash
+$ npm test
+```
+1. To build from ES6 to ES5:
+```bash
+$ gulp build
+```
 
-`npm install`
-
-After make any changes and add your test to __tests__ folder run the test command
-
-`npm test`
-
-To build from ES6 to ES5
-
-`gulp build`
-
-Enjoy!
+Enjoy! :ghost:
