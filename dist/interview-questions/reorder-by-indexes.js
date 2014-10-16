@@ -1,6 +1,6 @@
 var _reorderByIndexes = function(arr, indexes) {
-  return indexes.map(function(n) {
-    return arr[n];
+  return indexes.map(function(i) {
+    return arr[i];
   });
 };
 
