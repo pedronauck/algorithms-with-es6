@@ -1,10 +1,10 @@
-jest.dontMock('../fatorial');
+jest.dontMock('../factorial');
 
-describe('fatorial()', () => {
-  it('should return a fatorial of a number', () => {
-    let fatorial = require('../fatorial');
+describe('factorial()', () => {
+  it('should return a factorial of a number', () => {
+    let factorial = require('../factorial');
 
-    expect(fatorial(5)).toBe(120);
-    expect(fatorial(4)).toBe(24);
+    expect(factorial(5)).toBe(120);
+    expect(factorial(4)).toBe(24);
   });
 });

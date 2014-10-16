@@ -1,19 +1,17 @@
-(function() {
-  var isPrime = function(num) {
-    if (num % 2 === 0) return false;
-    if (num === 2 || num === 3) return true;
+var _isPrime = function(num) {
+  if (num % 2 === 0) return false;
+  if (num === 2 || num === 3) return true;
 
-    var _ref = [3, Math.sqrt(num)];
-    var divisor = _ref[0];
-    var limit = _ref[1];
+  var _ref = [3, Math.sqrt(num)];
+  var _divisor = _ref[0];
+  var _limit = _ref[1];
 
-    while (divisor <= limit) {
-      if (num % divisor === 0) return false;
-      divisor += 2;
-    }
+  while (_divisor <= _limit) {
+    if (num % _divisor === 0) return false;
+    _divisor += 2;
+  }
 
-    return true;
-  };
+  return true;
+};
 
-  module.exports = isPrime;
-})();
+module.exports = _isPrime;

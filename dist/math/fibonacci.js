@@ -1,22 +1,32 @@
-(function() {
-  var fibonacci = function(num) {
-    if (num === 0) return 0;
-    if (num === 1) return 1;
+var _fibonacci = function(num) {
+  if (num === 0) return 0;
+  if (num === 1) return 1;
 
-    var _ref = [0, 0, 1];
-    var index = _ref[0];
-    var pre = _ref[1];
-    var current = _ref[2];
-    var result = _ref[3];
+  var _ref = [0, 0, 1];
+  var _index = _ref[0];
+  var _pre = _ref[1];
+  var _current = _ref[2];
+  var _result = _ref[3];
 
-    while(++index < num) {
-      result = pre + current;
-      pre = current;
-      current = result;
-    }
+  while(++_index < num) {
+    _result = _pre + _current;
+    _pre = _current;
+    _current = _result;
+  }
 
-    return result;
-  };
+  return _result;
+};
 
-  module.exports = fibonacci;
-})();
+/*
+ * Fibonacci with a recursive approach
+ * Fib(n) = Fib(n-1) + Fib(n-2)
+ * @author Ciro costa (https://github.com/cirocosta)
+ */
+var fib = function(n) {
+  return n <= 1 ? n : (fib(n - 1) + fib(n - 2));
+};
+
+module.exports = {
+	fibonacciRec: fib,
+	fibonacci: _fibonacci
+};

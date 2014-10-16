@@ -1,15 +1,13 @@
-(function() {
-  var reverse = function(arr) {
-    var _ref = [new Array(), arr.length];
-    var newArr = _ref[0];
-    var index = _ref[1];
+var _reverse = function(arr) {
+  var _ref = [new Array(), arr.length];
+  var _newArr = _ref[0];
+  var _index = _ref[1];
 
-    while (--index >= 0) {
-      newArr.push(arr[index]);
-    }
+  while (--_index >= 0) {
+    _newArr.push(arr[_index]);
+  }
 
-    return newArr;
-  };
+  return _newArr;
+};
 
-  module.exports = reverse;
-})();
+module.exports = _reverse;

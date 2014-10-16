@@ -1,6 +1,6 @@
 jest
   .dontMock('../simple-combination')
-  .dontMock('../fatorial');
+  .dontMock('../factorial');
 
 describe('simpleCombination()', () => {
   it('should calculate a simple math combination expression', () => {
