@@ -1,7 +1,7 @@
 let flatten = (arr) => {
   let newArr = [];
 
-  let recursiveArr = (givenArr) => {
+  var recursiveArr = (givenArr) => {
     givenArr.forEach((item) => {
       (Array.isArray(item)) && (recursiveArr(item));
       (!Array.isArray(item)) && (newArr.push(item));
