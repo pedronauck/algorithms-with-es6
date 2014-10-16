@@ -13,4 +13,9 @@ let fibonacci = (num) => {
   return result;
 };
 
-module.exports = fibonacci;
+var fib = (n) => n <= 1 ? n : (fib(n - 1) + fib(n - 2));
+
+module.exports = {
+	fibonacciRec: fib,
+	fibonacci: fibonacci
+};
