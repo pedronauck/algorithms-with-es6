@@ -1,33 +1,31 @@
-var _arrIsEqual = require('../../utils/array-is-equal');
+(function() {
+  var arrIsEqual = require('../../utils/array-is-equal');
 
-var _givenSum = function(_arrIsEqual) {
-  return function(arr, sum) {
+  var givenSum = function(arr, sum) {
     var _ref = [-1, []];
-    var _index = _ref[0];
-    var _nums = _ref[1];
+    var index = _ref[0];
+    var nums = _ref[1];
 
-    while(++_index < arr.length) {
-      var _x = arr[_index];
+    while(++index < arr.length) {
+      (function() {
+        var x = arr[index];
 
-      arr.forEach(function(_x) {
-        return function(_nums) {
-          return function(y) {
-            var _contains = _nums.filter(function(arr) {
-              return _arrIsEqual(arr, [y,_x]);
-            });
+        arr.forEach(function(y) {
+          var contains = nums.filter(function(arr) {
+            return arrIsEqual(arr, [y,x]);
+          });
 
-            if ((_x + y === sum) && (_contains.length === 0)) {
-              _nums.push([_x, y]);
-            }
-          };
-        };
-      }(_x)(_nums));
+          if ((x + y === sum) && (contains.length === 0)) {
+            nums.push([x, y]);
+          }
+        });
+      })();
     }
 
-    return _nums.sort(function(a, b) {
+    return nums.sort(function(a, b) {
       return a[0] - b[0];
     });
   };
-}(_arrIsEqual);
 
-module.exports = _givenSum;
+  module.exports = givenSum;
+})();

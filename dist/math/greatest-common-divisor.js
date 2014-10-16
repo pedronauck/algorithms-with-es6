@@ -1,17 +1,19 @@
-var _greatestCommonDivisor = function(a, b) {
-  if (a < 2 && b < 2) return 1;
+(function() {
+  var greatestCommonDivisor = function(a, b) {
+    if (a < 2 && b < 2) return 1;
 
-  var _ref = [1];
-  var _divisor = _ref[0];
-  var _result = _ref[1];
+    var _ref = [1];
+    var divisor = _ref[0];
+    var result = _ref[1];
 
-  while(++_divisor <= Math.min(a, b)) {
-    if (a % _divisor === 0 && b % _divisor === 0) {
-      _result = _divisor;
+    while(++divisor <= Math.min(a, b)) {
+      if (a % divisor === 0 && b % divisor === 0) {
+        result = divisor;
+      }
     }
-  }
 
-  return _result || 1;
-};
+    return result || 1;
+  };
 
-module.exports = _greatestCommonDivisor;
+  module.exports = greatestCommonDivisor;
+})();

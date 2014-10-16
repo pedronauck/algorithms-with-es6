@@ -1,18 +1,20 @@
-var _arrIsEqual = function(arrX, arrY) {
-  if (arrX.length !== arrY.length) return false;
-  if (!Array.isArray(arrX) || !Array.isArray(arrY)) return false;
+(function() {
+  var arrIsEqual = function(arrX, arrY) {
+    if (arrX.length !== arrY.length) return false;
+    if (!Array.isArray(arrX) || !Array.isArray(arrY)) return false;
 
-  var _ref = [-1, true];
-  var _index = _ref[0];
-  var _isEqual = _ref[1];
+    var _ref = [-1, true];
+    var index = _ref[0];
+    var isEqual = _ref[1];
 
-  while (++_index <= arrX.length) {
-    if (arrX[_index] !== arrY[_index]) {
-      _isEqual = false;
+    while (++index <= arrX.length) {
+      if (arrX[index] !== arrY[index]) {
+        isEqual = false;
+      }
     }
-  }
 
-  return _isEqual;
-};
+    return isEqual;
+  };
 
-module.exports = _arrIsEqual;
+  module.exports = arrIsEqual;
+})();

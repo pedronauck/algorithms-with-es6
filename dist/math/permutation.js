@@ -1,9 +1,9 @@
-var _fat = require('./fatorial');
+(function() {
+  var fat = require('./fatorial');
 
-var _permutation = function(_fat) {
-  return function(num, repetition) {
-    return _fat(num) / _fat(num - repetition);
+  var permutation = function(num, repetition) {
+    return fat(num) / fat(num - repetition);
   };
-}(_fat);
 
-module.exports = _permutation;
+  module.exports = permutation;
+})();

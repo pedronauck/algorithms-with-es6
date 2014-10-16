@@ -1,7 +1,9 @@
-var _fatorial = function(num) {
-  var _result = 1;
-  while (--num) _result *= num + 1;
-  return _result;
-};
+(function() {
+  var fatorial = function(num) {
+    var result = 1;
+    while (--num) result *= num + 1;
+    return result;
+  };
 
-module.exports = _fatorial;
+  module.exports = fatorial;
+})();
