@@ -1,11 +1,6 @@
 let reverse = (arr) => {
-  let [newArr, index] = [new Array(), arr.length];
-
-  while (--index >= 0) {
-    newArr.push(arr[index]);
-  }
-
-  return newArr;
+  let index = arr.length;
+  return arr.map(() => arr[--index]);
 };
 
 module.exports = reverse;
