@@ -1,17 +1,15 @@
 let flatten = (arr) => {
   let newArr = [];
-  var checkArray = (item) => {
-    if (Array.isArray(item)) {
-      item.forEach(checkArray);
-    } else {
-      if (newArr.indexOf(item) === -1) {
-        newArr.push(item);
-      }
-    }
+
+  let recursiveArr = (givenArr) => {
+    givenArr.forEach((item) => {
+      (Array.isArray(item)) && (recursiveArr(item));
+      (!Array.isArray(item)) && (newArr.push(item));
+    });
   };
 
-  arr.forEach(checkArray);
-  return newArr.sort((a, b) => a - b);
-};
+  recursiveArr(arr);
+  return newArr;
+}
 
 module.exports = flatten;
