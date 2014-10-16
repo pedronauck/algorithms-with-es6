@@ -1,17 +1,13 @@
-(function() {
-  var isPalindrome = function(word) {
-    var _ref = [word.length, true];
-    var len = _ref[0];
-    var result = _ref[1];
+var _isPalindrome = function(word) {
+  var _ref = [word.length, true];
+  var _len = _ref[0];
+  var _result = _ref[1];
 
-    (function() {
-      for (var i = 0; i < len / 2; i++) {
-        if (word[i] !== word[len - 1 - i]) result = false;
-      }
-    })();
+  for (var _i = 0; _i < _len / 2; _i++) {
+    if (word[_i] !== word[_len - 1 - _i]) _result = false;
+  }
 
-    return result;
-  };
+  return _result;
+};
 
-  module.exports = isPalindrome;
-})();
+module.exports = _isPalindrome;

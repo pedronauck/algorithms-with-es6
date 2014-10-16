@@ -8,7 +8,7 @@ The list of Algorithms made by now:
 
 Algorithm | Description
 --------- | -----------
-[fatorial](/src/math/fatorial.js) | Fatorial algorithm
+[factorial](/src/math/factorial.js) | Factorial algorithm
 [fibonacci](/src/math/fibonacci.js) | Fibonacci algorithm
 [greatestCommonDivisor](/src/math/greatest-common-divisor.js) | Get the greatest common divisor of two numbers
 [isPrime](/src/math/is-prime.js) | Verify if is a prime number

@@ -1,6 +1,6 @@
 jest
   .dontMock('../permutation')
-  .dontMock('../fatorial');
+  .dontMock('../factorial');
 
 describe('permutation()', () => {
   it('should calculate a permutation math expression', () => {

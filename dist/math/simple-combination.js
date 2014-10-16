@@ -1,9 +1,9 @@
-(function() {
-  var fat = require('./fatorial');
+var _fac = require('./factorial');
 
-  var simpleCombination = function(num, repetition) {
-    return fat(num) / (fat(repetition) * fat(num - repetition));
+var _simpleCombination = function(_fac) {
+  return function(num, repetition) {
+    return _fac(num) / (_fac(repetition) * _fac(num - repetition));
   };
+}(_fac);
 
-  module.exports = simpleCombination;
-})();
+module.exports = _simpleCombination;

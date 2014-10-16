@@ -1,7 +1,7 @@
-let fat = require('./fatorial');
+let fac = require('./factorial');
 
 let simpleCombination = (num, repetition) => {
-  return fat(num) / (fat(repetition) * fat(num - repetition));
+  return fac(num) / (fac(repetition) * fac(num - repetition));
 };
 
 module.exports = simpleCombination;
