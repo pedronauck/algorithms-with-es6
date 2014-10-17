@@ -11,4 +11,10 @@ let stringContains = (str, substr) => {
   return contains;
 };
 
-module.exports = stringContains;
+var rStrContains = (a, b) =>
+	(!a ? false : (a === b ? true : rStrContains(a.substr(1), b)));
+
+module.exports = {
+	stringContains,
+	rStrContains
+};
