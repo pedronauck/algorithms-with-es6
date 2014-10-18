@@ -13,11 +13,6 @@ let fibonacci = (num) => {
   return result;
 };
 
-/*
- * Fibonacci with a recursive approach
- * Fib(n) = Fib(n-1) + Fib(n-2)
- * @author Ciro costa (https://github.com/cirocosta)
- */
 var fib = (n) => n <= 1 ? n : (fib(n - 1) + fib(n - 2));
 
 module.exports = {

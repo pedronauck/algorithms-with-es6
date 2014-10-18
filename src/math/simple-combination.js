@@ -1,7 +1,5 @@
 let fac = require('./factorial');
 
-let simpleCombination = (num, repetition) => {
-  return fac(num) / (fac(repetition) * fac(num - repetition));
-};
+let simpleCombination = (num, rep) => fac(num) / (fac(rep) * fac(num - rep));
 
 module.exports = simpleCombination;
