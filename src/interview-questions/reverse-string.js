@@ -1,13 +1,13 @@
 let arrayReverse = require('../array/reverse');
 
-let reverseString = (str) => arrayReverse(str.split('')).join('');
+let reverseStr = (str) => arrayReverse(str.split('')).join('');
 
-var rReverseString = (str) => {
+var rReverseStr = (str) => {
   let lastChar = str.length - 1;
-  return !str ? '' : str[lastChar] + rReverseString(str.substr(0, lastChar));
+  return !str ? '' : str[lastChar] + rReverseStr(str.substr(0, lastChar));
 };
 
 module.exports = {
-	rReverseString,
-	reverseString
+	rReverseStr,
+	reverseStr
 };

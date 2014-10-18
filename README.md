@@ -30,7 +30,7 @@ Algorithm | Description
 [givenSum](/src/interview-questions/given-sum.js) | Get two numbers in an array that the sum is equal a other number that is passed as second parameter
 [isPalindrome](/src/interview-questions/is-palindrome.js) | Return if word is a [palindrome](http://en.wikipedia.org/wiki/Palindrome)
 [reorderByIndexes](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
-[reverse](/src/interview-questions/reverse.js) | Reverses a given string 
+[reverseStr](/src/interview-questions/reverseStr.js) | Reverses a given string 
 
 You can see the compiled codes [at here](/dist).
 

@@ -2,12 +2,12 @@ jest
 	.dontMock('../../array/reverse')
   .dontMock('../reverse-string');
 
-describe('reverseString()', () => {
+describe('reverseStr()', () => {
   it('should return a reverse string', () => {
-    let { rReverseString, reverseString } = require('../reverse-string');
+    let { rReverseStr, reverseStr } = require('../reverse-string');
     let str = 'abcde';
 
-    expect(rReverseString(str)).toEqual('edcba');
-    expect(reverseString(str)).toEqual('edcba');
+    expect(rReverseStr(str)).toEqual('edcba');
+    expect(reverseStr(str)).toEqual('edcba');
   });
 });
