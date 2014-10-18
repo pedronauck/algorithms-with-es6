@@ -8,6 +8,6 @@ var rReverseStr = (str) => {
 };
 
 module.exports = {
-	rReverseStr,
-	reverseStr
+  rReverseStr,
+  reverseStr
 };
