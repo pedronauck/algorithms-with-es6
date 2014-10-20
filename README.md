@@ -32,7 +32,7 @@ Algorithm | Description
 [reorderByIndexes](/src/interview-questions/reorder-by-indexes.js) | Reorder an array based on other array with indexes
 [reverseStr](/src/interview-questions/reverse-string.js) | Reverses a given string 
 
-You can see the compiled codes [at here](/dist).
+You can see the compiled codes [at here](/compiled).
 
 ## How to run
 

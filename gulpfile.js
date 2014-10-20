@@ -11,5 +11,5 @@ gulp.task('build', function () {
 
   gulp.src(paths)
     .pipe(to5())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('compiled'));
 });
