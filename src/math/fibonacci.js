@@ -1,13 +1,10 @@
 let fibonacci = (num) => {
-  if (num === 0) return 0;
-  if (num === 1) return 1;
+  if (num <= 1) return num;
+  let [previous, current, result] = [0, 1];
 
-  let [index, pre, current, result] = [0, 0, 1];
-
-  while(++index < num) {
-    result = pre + current;
-    pre = current;
-    current = result;
+  for (let i = 1; i < num; i++) {
+    let temp = previous + current;
+    [previous, current] = [current, current = result = temp];
   }
 
   return result;
