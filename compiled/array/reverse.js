@@ -1,3 +1,4 @@
+"use strict";
 var _reverse = function(arr) {
   var _index = arr.length;
   return arr.map(function(_index) {

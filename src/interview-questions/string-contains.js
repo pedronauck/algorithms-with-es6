@@ -11,7 +11,7 @@ let stringContains = (str, substr) => {
   return contains;
 };
 
-var rStrContains = (a, b) => {
+let rStrContains = (a, b) => {
   return !a ? false : (a === b ? true : rStrContains(a.substr(1), b));
 };
 

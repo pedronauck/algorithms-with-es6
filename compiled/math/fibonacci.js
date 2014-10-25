@@ -1,3 +1,4 @@
+"use strict";
 var _fibonacci = function(num) {
   if (num <= 1) return num;
   var _ref = [0, 1];
@@ -15,11 +16,11 @@ var _fibonacci = function(num) {
   return _result;
 };
 
-var fib = function(n) {
-  return n <= 1 ? n : (fib(n - 1) + fib(n - 2));
+var _fib = function(n) {
+  return n <= 1 ? n : (_fib(n - 1) + _fib(n - 2));
 };
 
 module.exports = {
-	fibonacciRec: fib,
-	fibonacci: _fibonacci
+    fibonacciRec: _fib,
+    fibonacci: _fibonacci
 };

@@ -1,5 +1,6 @@
-var gcd = function(a, b) {
-  return !b ? a : gcd(b, a % b);
+"use strict";
+var _gcd = function(a, b) {
+  return !b ? a : _gcd(b, a % b);
 };
 
-module.exports = gcd;
+module.exports = _gcd;

@@ -1,3 +1,4 @@
+"use strict";
 var _isPalindrome = function(word) {
   var _ref = [word.length, true];
   var _len = _ref[0];

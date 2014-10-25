@@ -1,3 +1,4 @@
+"use strict";
 var _flatten = function(arr) {
   var _newArr = [];
 

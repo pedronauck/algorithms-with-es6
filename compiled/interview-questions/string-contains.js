@@ -1,3 +1,4 @@
+"use strict";
 var _stringContains = function(str, substr) {
   var contains = false;
   var _ref = [substr.split(''), str.split('')];
@@ -15,11 +16,11 @@ var _stringContains = function(str, substr) {
   return contains;
 };
 
-var rStrContains = function(a, b) {
-  return !a ? false : (a === b ? true : rStrContains(a.substr(1), b));
+var _rStrContains = function(a, b) {
+  return !a ? false : (a === b ? true : _rStrContains(a.substr(1), b));
 };
 
 module.exports = {
   stringContains: _stringContains,
-  rStrContains: rStrContains
+  rStrContains: _rStrContains
 };

@@ -1,3 +1,4 @@
+"use strict";
 var _isPrime = function(num) {
   if (num % 2 === 0) return false;
   if (num === 2 || num === 3) return true;

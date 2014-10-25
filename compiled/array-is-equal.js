@@ -1,3 +1,4 @@
+"use strict";
 var _arrIsEqual = function(arrX, arrY) {
   if (arrX.length !== arrY.length) return false;
   if (!Array.isArray(arrX) || !Array.isArray(arrY)) return false;

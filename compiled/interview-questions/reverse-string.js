@@ -1,17 +1,16 @@
+"use strict";
 var _arrayReverse = require('../array/reverse');
 
-var _reverseStr = function(_arrayReverse) {
-  return function(str) {
-    return _arrayReverse(str.split('')).join('');
-  };
-}(_arrayReverse);
+var _reverseStr = function(str) {
+  return _arrayReverse(str.split('')).join('');
+};
 
-var rReverseStr = function(str) {
+var _rReverseStr = function(str) {
   var _lastChar = str.length - 1;
-  return !str ? '' : str[_lastChar] + rReverseStr(str.substr(0, _lastChar));
+  return !str ? '' : str[_lastChar] + _rReverseStr(str.substr(0, _lastChar));
 };
 
 module.exports = {
-  rReverseStr: rReverseStr,
+  rReverseStr: _rReverseStr,
   reverseStr: _reverseStr
 };
