@@ -1,18 +1,14 @@
 "use strict";
-var _flatten = function(arr) {
-  var _newArr = [];
+var _flatten = function(arr, givenArr) {
+  if (givenArr === undefined)
+    givenArr = [];
 
-  var recursiveArr = function(_newArr) {
-    return function(givenArr) {
-      givenArr.forEach(function(item) {
-        (Array.isArray(item)) && (recursiveArr(item));
-        (!Array.isArray(item)) && (_newArr.push(item));
-      });
-    };
-  }(_newArr);
+  arr.forEach(function(item) {
+    (Array.isArray(item)) && (_flatten(item, givenArr));
+    (!Array.isArray(item)) && (givenArr.push(item));
+  });
 
-  recursiveArr(arr);
-  return _newArr;
+  return givenArr;
 };
 
 module.exports = _flatten;

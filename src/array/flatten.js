@@ -1,15 +1,10 @@
-let flatten = (arr) => {
-  let newArr = [];
+let flatten = (arr, givenArr = []) => {
+  arr.forEach((item) => {
+    (Array.isArray(item)) && (flatten(item, givenArr));
+    (!Array.isArray(item)) && (givenArr.push(item));
+  });
 
-  var recursiveArr = (givenArr) => {
-    givenArr.forEach((item) => {
-      (Array.isArray(item)) && (recursiveArr(item));
-      (!Array.isArray(item)) && (newArr.push(item));
-    });
-  };
-
-  recursiveArr(arr);
-  return newArr;
-}
+  return givenArr;
+};
 
 module.exports = flatten;
