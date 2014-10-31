@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pedronauck/algorithms-with-js",
   "devDependencies": {
-    "6to5": "^1.7.16",
+    "6to5": "^1.10.8",
     "gulp": "^3.8.8",
     "gulp-6to5": "^1.0.1",
     "jest": "^0.1.37",
