@@ -22,6 +22,10 @@ Algorithm | Description
 [flatten](/src/array/flatten.js) | Flatten an array
 [removeFromArr](/src/array/remove-from-array.js) | Remove an item from an array
 [reverse](/src/array/reverse.js) | Reverse an array
+[removeDuplicates](/src/array/remove-duplicates.js) | Remove duplicates item in array
+[concat](/src/array/concat.js) | Concatenate arrays
+[intersection](/src/array/intersection.js) | Intersection between arrays
+[union](/src/array/union.js) | Union between arrays
 
 ## Interview Questions
 
