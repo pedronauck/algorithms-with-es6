@@ -13,7 +13,7 @@ describe('givenSum()', () => {
     var givenSum = require('../given-sum');
 
     var largeArray = [];
-    for (var i = 0; i < 100; i++) {
+    for (var i = 0; i < 10000; i++) {
       largeArray.push(i);
     }
     
