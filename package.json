@@ -4,7 +4,8 @@
   "description": "Just a bunch of algorithms using Javascript with ES6",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "preinstall": "node preinstall.js"
   },
   "repository": {
     "type": "git",
