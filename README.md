@@ -1,8 +1,8 @@
 # Algorithms with ES6
 
-This is a just a lab to test how it would look classic algorithms written with Ecmascript 6. The code result is incredible, because it resolve a lot of problems that we had when writting Javascript.
+This is just a lab to test how classic algorithms written in Ecmascript 6  would look like. The code result is incredible, because it resolves a lot of problems that we used to have while writting Javascript.
 
-The list of Algorithms made by now:
+The list of Algorithms so far:
 
 ## Math Expressions
 
@@ -44,7 +44,7 @@ You can see the compiled codes [at here](/compiled).
 ```bash
 $ npm install
 ```
-1. After make any changes and add your test to `__tests__` folder run the test command
+1. After making any changes, add your tests to `__tests__` folder and run the test command
 ```bash
 $ npm test
 ```
